@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+
+body {
+    background-color: #dac189;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* box */
+.login-box {
+    width: 400px;
+    padding: 50px;
+    background-color: #ebddc0;
+    box-shadow: 0 15px 25px rgba(182, 141, 61);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 57px;
+    padding: 0;
+    color:rgb(44, 1, 28);
+    text-align: center;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 2px 0;
+    font-size: 16px;
+    color:rgb(44, 25, 1);
+    margin-bottom: 3px;
+    border: none;
+    border-bottom: 1px solid rgb(137, 66, 0);
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    padding: 7px 0;
+    font-size: 16px;
+    color:rgb(44, 25, 1);
+}
+
+
+/* buttons */
+
+#submit {
+    padding: 5px 15px;
+    color:rgb(137, 66, 0);
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 1px solid rgb(44, 25, 1);
+    margin: auto;
+}
+
+#submit:hover {
+    background: rgb(44, 25, 1);
+    color:rgb(137, 66, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(137, 66, 0), 0 0 50px rgb(137, 66, 0), 0 0 100px rgb(137, 66, 0);
+}
+
+#button-form {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.button-form {
+    padding: 1.5rem;
+    margin:10px 0 0 -25px;
+}
+
+#register {
+    font-size: 15px;
+    padding: 14px;
+    text-decoration: none;
+    color:rgb(32, 23, 3);
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#register a {
+    margin: auto;
+    color:rgb(44, 25, 1);
+    text-decoration: underline;
+}
+
+#register a:hover {
+    color:rgb(137, 66, 0);
+}
+
+

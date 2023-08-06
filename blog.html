@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/blog.css">
+  <title>Latest Blogs</title>
+  
+    <style>
+      nav {
+          height: 70px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          background-color: rgb(137, 66, 0);
+          font-family: 'Bebas Neue';
+      }
+
+      .left-container {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1;
+      }
+
+      .left-container ul {
+          list-style-type: none;
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .left-container ul li {
+          justify-content: flex-start;
+          margin: 0 16px;
+          font-size: 20px;
+      }
+
+      #logo img {
+          display: block;
+      }
+
+      .right-container {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+      }
+
+      .right-container ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .right-container li {
+          margin: 0 17px;
+      }
+
+      .right-container a {
+          text-align: center;
+      }
+
+      .right-container img {
+          width: 25px;
+          height: 25px;
+      }
+
+      a {
+          text-decoration: none;
+          color: rgb(235, 221, 192);
+      }
+
+      a:hover {
+          color: rgb(218, 193, 137);
+      }
+
+      #newsletter {
+          padding-left: 200px;
+          font-weight: bold;
+          font-size:25px; 
+          color: #000;
+      }
+
+      table {
+          height: 120px;
+          width:100%; 
+          background-color: #B68D3D; 
+      }
+
+      #email_button {
+          float: right;
+          margin-right: 200px;
+      }
+
+      input[type=email] {
+          background-color: #EBDDC0;
+          opacity: 100%;
+          border: none;
+          border-bottom: 2px solid rgb(61, 61, 61);
+          color: #000;
+          padding: 10px 15px;
+          background: #EBDDC0;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+      }
+
+      input[type=email]::placeholder {
+          color:#000
+      }
+
+      input[type=submit] {
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          color: #000;
+          padding: 10px 15px;
+          background: #ffffff;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+      }
+      
+      footer {
+          background-color: #2c1901;
+          font-size: 1.1rem;
+          color: #dac189;
+          padding: 1rem;
+          margin: 0; 
+          box-sizing: border-box;
+      }
+
+      footer h1,
+      h2,
+      h3,
+      h4 {
+          font-family: 'Bebas Neue', sans-serif;
+      }
+
+      h1 {
+          font-size: 48px;
+      }
+      h2 {
+          font-size: 36px;
+      }
+      h3 {
+          font-size: 28px;
+          margin-left: 2rem;
+      }
+      h4 {
+          font-size: 21px;
+      }
+
+      .social {
+          display: flex;
+          justify-content: right;
+          list-style-type: none;
+      }
+
+      .social-icon {
+          margin: 1rem;
+          font-size: 2rem;
+          margin-bottom: 5rem;
+      }
+
+      .fa-icon {
+          display: inline-block;
+          font-size: 1.75rem;
+          padding: 0px 20px;
+          color: #dac189;
+      }
+
+      .contact-info, .copyright {
+          margin-left: 2rem;
+      }
+    </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+    <div class="left-container">
+        <ul>   
+            <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/store.html">SHOP</a></li>
+            <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/blog.html">LEARN</a></li>
+            <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/about.html">ABOUT</a></li>
+        </ul>
+    </div>
+        <div id="logo">
+            <a href="https://vancouvercoffeeroasters.oskartsang.ca/home.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div class="right-container">
+        <ul>
+            <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/form.html"><img src="img/login.png" alt="login icon"></a></li>
+            <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/cart.html"><img src="img/cart.png" alt="cart icon"></a></li>
+            <li><a href="#"><img src="img/search.png" alt="search icon"></a></li>
+        </ul>
+        </div>
+    </nav> 
+</header>
+
+<h2 id="featured"> Featured Posts</h2>
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="img/image1.jpg" class="active" alt="Image1">
+          <img src="img/image2.jpg" class="" alt="Image2">
+          <img src="img/image3.jpg" class="" alt="Image3">
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <a class="prev" onclick="plusSlide(-1)">❮</a>
+        <a class="next" onclick="plusSlide(1)">❯</a>
+      </div>
+
+<!-- Line --> <hr>
+
+    <!-- Text and Filter -->
+        <div class="header">
+          <div class="posts-wrapper">
+        <p class="posts">All posts</p>
+          </div>
+          <div class="filter-wrapper">
+        <p class="filter">Tags</p>
+        </div>
+    </div>
+
+    <!-- Blog 1 -->
+    <div class="container1">
+        <div class="image">
+          <img src="img/blog1.jpg" alt="Blog Post Image">
+        </div>
+        <div class="details">
+          <h2>How to make coffee with a French Press</h2>
+          <div class="info">
+            <p class="author">Author</p>
+            <p class="date">Date of Post</p>
+            <p class="views">Views</p>
+          </div>
+          <p>
+            Discovered in the mid 1800’s, the French Press has been a popular brewing convention used even till this day. A simple but classic brewing method loved by many coffee lovers. Learn how to bring the best of your beans with a French press, from the grind, water temperature, and guided process.
+          </p>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="container2">
+        <div class="image">
+          <img src="img/blog2.jpg" alt="Blog Post Image">
+        </div>
+        <div class="details">
+          <h2>Coffee Pairings, Featuring House Blends </h2>
+          <div class="info">
+            <p class="author">Author </p>
+            <p class="date">Date of Post </p>
+            <p class="views">Views </p>
+          </div>
+          <p>
+            Did you know coffee can be enjoyed with different pairings based on its flavor? Discover how to identify each bean with its aroma and flavor profile, and recommended food items to elevate your experience.
+          </p>
+        </div>
+      </div>
+
+    <!-- Blog 3 -->
+    <div class="container3">
+        <div class="image">
+          <img src="img/blog3.jpg" alt="Blog Post Image">
+        </div>
+        <div class="details">
+          <h2>Best Practices for Storing Coffee </h2>
+          <div class="info">
+            <p class="author">Author </p>
+            <p class="date">Date of Post </p>
+            <p class="views">Views </p>
+          </div>
+          <p>
+            Not a fan of stale, old coffee? When you store coffee beans properly, it upholds and preserves the packed flavor. Properly storing your beans within your current home or living environment can make a world of a difference in your final cup of joe.
+          </p>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="container4">
+        <div class="image">
+          <img src="img/blog4.jpg" alt="Blog Post Image">
+        </div>
+        <div class="details">
+          <h2>Grind Size: Which grind works best for each method? </h2>
+          <div class="info">
+            <p class="author">Author </p>
+            <p class="date">Date of Post </p>
+            <p class="views">Views </p>
+          </div>
+          <p>
+            Have you ever heard of the terms coarse, medium-coarse, and fine? These are the different grind sizes you can use for making coffee. Based on your brewing method and type of coffee beverage, each grind will produce a different outcome. Learn more on grinds and the difference between machine grinders and hand grinding!
+          </p>
+        </div>
+      </div>
+
+      <!-- Pages -->
+      <div class="pagination">
+        <span class="page-number">&lt;</span>
+        <span class="page-number">1</span>
+        <span class="page-number2">2</span>
+        <span class="page-number">3</span>
+        <span class="page-number">4</span>
+        <span class="page-number">...</span>
+        <span class="page-number">&gt;</span>
+      </div>
+    <!-- Carousel js -->
+    <script src="js/carousel.js"></script>
+</div>
+
+  <div class="newsletter">
+    <table>
+        <tr>
+            <td>
+                <span id="newsletter">
+                    Subscribe to our weekly newsletter
+                    <div id="email_button">
+                    <input type="email" name="email" placeholder="Enter email ">
+                    <a href="https://vancouvercoffeeroasters.oskartsang.ca/ty_register.html"> <input type="submit" value="Subscribe"> </a>
+                    </div>
+                </span>
+            </td>
+        </tr>
+    </table>
+  </div>
+
+  <footer>
+    <h3>Vancouver Coffee Roasters</h3>
+    <br>
+    <span class="contact-info">123 Somewhere</span>
+    <span class="contact-info">Vancouver, BC</span>
+    <span class="contact-info">(555) 555-5555</span>
+    <br>
+    <br>
+    <span class="copyright">Copyright © Date Name. All rights reserved.</span>
+
+    <ul class="social">
+        <li class="social-icon "><i class="fa-brands fa-square-facebook"></i></li>
+        <li class="social-icon "><i class="fa-brands fa-square-twitter"></i></li>
+        <li class="social-icon "><i class="fa-brands fa-square-instagram"></i></li>
+        <a href="https://vancouvercoffeeroasters.oskartsang.ca/contact.html"><li class="social-icon "><i class="fa-solid fa-envelope"></i></li></a>
+    </ul>
+  </footer>
+
+</body>
+</html>

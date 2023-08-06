@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+
+body {
+  background-color: #dac189;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#featured {
+  color: #894201;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Carousel */
+.carousel-container {
+position: relative;
+margin: 0 auto;
+width: 700px;
+height: 400px;
+overflow: hidden;
+}
+
+.carousel {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.carousel img {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+opacity: 1;
+}
+
+.dots {
+position: absolute;
+top: 375px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+
+.dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #ffffff;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.dot.active {
+background-color: #717171;
+}
+
+.prev, .next {
+position: absolute;
+top: 45%;
+display: block;
+color: rgb(255, 255, 255);
+font-size: 40px;
+font-weight: bold;
+padding: 0 20px;
+cursor: pointer;
+z-index: 1;
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+
+/* line */
+hr {
+  margin: 80px auto;
+  width: 100%;
+  background-color: #080808;
+}
+
+/* Text and Filter */
+.header {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #894201;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  border: 2px solid #eadec0;
+  padding: 20px;
+}
+
+.posts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts {
+  margin-bottom: 10px;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+/* Blog */
+
+.container1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #894201;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2px;
+    padding-top: 0;
+    margin-bottom: 50px;
+    border: 2px solid #eadec0;
+    padding: 20px;
+  }
+
+  .container2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #894201;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  .container3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #894201;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  .container4 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #894201;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  .image {
+    flex: 0 0 45%;
+  margin-right: 4%;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .details {
+    flex: 0 0 45%;
+  }
+
+  .details h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .details p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .details .info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .details .author {
+    margin-right: 20px;
+  }
+
+  .details .views {
+    margin-right: 20px;
+  }
+
+  .details .date {
+    margin-right: 20px;
+  }
+
+  /* Pages */
+  .pagination {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 9%;
+    display: flex;
+  }
+  
+  .page-number {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+  }
+
+  .page-number2 {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    border-radius: 3px;
+    color: #333;
+  }

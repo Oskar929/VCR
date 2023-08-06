@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&display=swap');
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #dac189;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 40px;
+}
+
+.container h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-shadow: 0 5px 15px rgba(182, 141, 61);
+}
+
+#card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+    text-shadow: 0 5px 15px rgba(182, 141, 61);
+    
+} 
+
+hr {
+    border-color: rgba(44, 25, 1);
+         
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pourover {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 450px;
+    height: 430px;
+    margin: 20px;
+    margin-right: 90px;
+    padding: 15px;
+}
+
+.pourover:hover {
+    box-shadow:0 15px 25px rgba(182, 141, 61);
+    background-color: rgba(218, 193, 137);
+
+}
+
+.dark_roast {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 450px;
+    height: 430px;
+    margin: 20px;
+    margin-left: 90px;
+    padding: 15px;
+}
+
+.dark_roast:hover {
+    box-shadow:0 15px 25px rgba(182, 141, 61);
+    background-color: rgba(218, 193, 137);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3{
+    margin: 10px;
+    font-size: 30px;
+}
+
+
+.card p {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+

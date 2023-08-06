@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  	<link rel="stylesheet" type="text/css" href="css/store.css">
+    <title>Store</title>
+
+<style>
+  nav {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(137, 66, 0);
+        font-family: 'Bebas Neue';
+    }
+
+    .left-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+    }
+
+    .left-container ul {
+        list-style-type: none;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-container ul li {
+        justify-content: flex-start;
+        margin: 0 16px;
+        font-size: 20px;
+    }
+
+    #logo img {
+        display: block;
+    }
+
+    .right-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .right-container ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-container li {
+        margin: 0 17px;
+    }
+
+    .right-container a {
+        text-align: center;
+    }
+
+    .right-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .left-container  a {
+        text-decoration: none;
+        color: rgb(235, 221, 192);
+    }
+
+    .left-container a:hover {
+        color: rgb(218, 193, 137);
+    }
+
+    #newsletter {
+        padding-left: 200px;
+        font-weight: bold;
+        font-size:25px; 
+        color: #000;
+    }
+
+    .newsletter table {
+        height: 120px;
+        width:100%; 
+        background-color: #B68D3D; 
+    }
+
+   .newsletter #email_button {
+        float: right;
+        margin-right: 200px;
+    }
+
+    
+    .newsletter input[type=email] {
+          background-color: #EBDDC0;
+          opacity: 100%;
+          border: none;
+          border-bottom: 2px solid rgb(61, 61, 61);
+          color: #000;
+          padding: 10px 15px;
+          background: #EBDDC0;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+    }
+
+    .newsletter input[type=email]::placeholder {
+        color:#000
+    }
+
+    .newsletter input[type=submit] {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: #000;
+        padding: 10px 15px;
+        background: #ffffff;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+   footer {
+        background-color: #2c1901;
+        font-size: 1.1rem;
+        color: #dac189;
+        padding: 1rem;
+        margin: 0; 
+        box-sizing: border-box;
+    }
+
+    footer h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+        margin-left: 2rem;
+    }
+    h4 {
+        font-size: 21px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+    }
+
+    .social-icon {
+        margin: 1rem;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .fa-icon {
+        display: inline-block;
+        font-size: 1.75rem;
+        padding: 0px 20px;
+        color: #dac189;
+    }
+
+    .contact-info, .copyright {
+        margin-left: 2rem;
+    }
+</style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+        <div class="left-container">
+            <ul>   
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/store.html">SHOP</a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/blog.html">LEARN</a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/about.html">ABOUT</a></li>
+            </ul>
+        </div>
+            <div id="logo">
+                <a href="https://vancouvercoffeeroasters.oskartsang.ca/home.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="right-container">
+            <ul>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/form.html"><img src="img/login.png" alt="login icon"></a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/cart.html"><img src="img/cart.png" alt="cart icon"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="search icon"></a></li>
+            </ul>
+            </div>
+        </nav> 
+    </header>
+
+	<div class="search">
+		<input type="text" placeholder="Search..">
+		<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+	</div>
+
+	<!-- Category Title -->
+	<div class="category1">
+		<p> Featured Categories </p>
+	</div>
+
+	<!-- Category boxes -->
+	<div class="category2"> 
+			<div id="cat1"> <img src="img/bean.jpg" alt="Beans"> <p> Beans </p> </div>
+			<div id="cat2"> <img src="img/brew.jpg" alt="Brew Machine"> <p> Brew </p> </div>
+			<div id="cat3"> <img src="img/cup.jpg" alt="Cups"> <p> Cup </p> </div>
+			<div id="cat4"> <img src="img/all.jpg" alt="See All"> </div>
+	</div>
+
+	<!-- Product Section of HTML -->
+	<div class="title2"> 
+		<p> Products </p>
+	</div> 
+
+	<!-- Product 1 -->
+	<div class="product">
+
+		<!-- Product Image  -->
+		<a href="https://vancouvercoffeeroasters.oskartsang.ca/product.html"><div id="pro1"> <img src="img/colombia.jpg" alt="Colombia Coffee Beans"> </div></a>
+
+		<!-- Product Info -->
+		<div class="info">
+		<div> <p id="name"> Rosca </p></div>
+		<div id="star"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		<div> <p id="price"> $20 </p> </div>
+		<div> <p id="cate"> Beans </p> </div>
+		</div>
+
+		<!-- Product Description -->
+		<div class="desc"> 
+			<p id="desc1"> Product Name: Rosca</p>
+			<p id="desc1">Item Code: ADRK-2092</p>
+			<p id="desc1">Roast Level: Dark</p>
+			<p id="desc1">Bean Origin: Colombia</p>
+
+			<p id="desc1"> "Experience the rich and full-bodied coffee blend, roasted to produce a robust flavor with hints of cocoa and nutty notes. This dark roast is meant for those looking for the strong and bold. ”<a href="#"> See More...</a></p>
+		</div>
+	</div>
+
+	<!-- Product 2 -->
+	<div class="product">
+
+		<!-- Product Image  -->
+		<div id="pro2"> <img src="img/suncast.jpg" alt="Suncast Coffee Beans"> </div>
+
+		<!-- Product Info -->
+		<div class="info">
+		<div> <p id="name"> Robusta </p></div>
+		<div id="star"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		<div> <p id="price"> $17 </p> </div>
+		<div> <p id="cate"> Beans </p> </div>
+		</div>
+
+		<!-- Product Description -->
+		<div class="desc">
+			<p id="desc1"> Product Name: Robusta</p>
+			<p id="desc1">Item Code: ALGH-2093</p>
+			<p id="desc1">Roast Level: Light</p>
+			<p id="desc1">Bean Origin: Colombia</p>
+
+			<p id="desc1"> Robusta coffee beans are known for their strong, earthy flavor, with a higher caffeine content than Arabica beans.  <a href="#"> See More...</a></p>
+		</div>
+	</div>
+
+	<!-- Product 3 -->
+	<div class="product">
+
+		<!-- Product Image  -->
+		<div id="pro3"> <img src="img/houseblend.jpg" alt="Houseblend Coffee Beans"> </div>
+
+		<!-- Product Info -->
+		<div class="info">
+		<div> <p id="name"> House-Blend </p></div>
+		<div id="star"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		<div> <p id="price"> $19 </p> </div>
+		<div> <p id="cate"> Beans </p> </div>
+		</div>
+
+		<!-- Product Description -->
+		<div class="desc">
+			<p id="desc1"> Product Name: VCR House Blend </p>
+			<p id="desc1">Item Code: HMDM-2092</p>
+			<p id="desc1">Roast Level: Medium</p>
+			<p id="desc1">Bean Origin: Ethiopia, Columbia, Brazil</p>
+ 
+			<p id="desc1"> Bringing our best complimentary beans for smooth and balanced flavor. This blend consists of a combination of Arabica beans carefully selected, tested, and tasted. <a href="#"> See More...</a></p>
+		</div>
+	</div>
+
+	<!-- Product 4 -->
+	<div class="product">
+
+		<!-- Product Image  -->
+		<div id="pro4"> <img src="img/willowwest.jpg" alt="Willowwest Coffee Beans"> </div>
+
+		<!-- Product Info -->
+		<div class="info">
+		<div> <p id="name"> Willow West </p></div>
+		<div id="star"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		<div> <p id="price"> $15 </p> </div>
+		<div> <p id="cate"> Beans </p> </div>
+		</div>
+
+		<!-- Product Description -->
+		<div class="desc"> 
+			<p id="desc1"> Product Name: Willow West </p>
+			<p id="desc1">Item Code: HLGH-209$</p>
+			<p id="desc1">Roast Level: Light</p>
+			<p id="desc1">Bean Origin: Columbia</p>
+
+			<p id="desc1"> Introducing Willow West, our premium light roast coffee blend that's locally crafted in Vancouver, Canada.<a href="#"> See More...</a></p>
+		</div>
+	</div>
+
+  <div class="newsletter">
+      <table>
+          <tr>
+              <td>
+                  <span id="newsletter">
+                      Subscribe to our weekly newsletter
+                      <div id="email_button">
+                      <input type="email" name="email" placeholder="Enter email ">
+                      <a href="https://vancouvercoffeeroasters.oskartsang.ca/ty_register.html"> <input type="submit" value="Subscribe"> </a>
+                      </div>
+                  </span>
+              </td>
+          </tr>
+      </table>
+  </div>
+  
+  <footer>
+      <h3>Vancouver Coffee Roasters</h3>
+      <br>
+      <span class="contact-info">123 Somewhere</span>
+      <span class="contact-info">Vancouver, BC</span>
+      <span class="contact-info">(555) 555-5555</span>
+      <br>
+      <br>
+      <span class="copyright">Copyright © Date Name. All rights reserved.</span>
+  
+      <ul class="social">
+          <li class="social-icon "><i class="fa-brands fa-square-facebook"></i></li>
+          <li class="social-icon "><i class="fa-brands fa-square-twitter"></i></li>
+          <li class="social-icon "><i class="fa-brands fa-square-instagram"></i></li>
+          <a href="https://vancouvercoffeeroasters.oskartsang.ca/contact.html"><li class="social-icon "><i class="fa-solid fa-envelope"></i></li></a>
+      </ul>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/product.css">
+    <title>Product: Colombia Beans</title>
+
+<style>
+    nav {
+          height: 70px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          background-color: rgb(137, 66, 0);
+          font-family: 'Bebas Neue';
+      }
+
+      .left-container {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1;
+      }
+
+      .left-container ul {
+          list-style-type: none;
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .left-container ul li {
+          justify-content: flex-start;
+          margin: 0 16px;
+          font-size: 20px;
+      }
+
+      #logo img {
+          display: block;
+      }
+
+      .right-container {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+      }
+
+      .right-container ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .right-container li {
+          margin: 0 17px;
+      }
+
+      .right-container a {
+          text-align: center;
+      }
+
+      .right-container img {
+          width: 25px;
+          height: 25px;
+      }
+
+      a {
+          text-decoration: none;
+          color: rgb(235, 221, 192);
+      }
+
+      a:hover {
+          color: rgb(218, 193, 137);
+      }
+
+      #newsletter {
+          padding-left: 200px;
+          font-weight: bold;
+          font-size:25px; 
+          color: #000;
+      }
+
+      .newsletter table {
+          height: 120px;
+          width:100%; 
+          background-color: #B68D3D; 
+      }
+
+     .newsletter #email_button {
+          float: right;
+          margin-right: 200px;
+      }
+
+      
+      .newsletter input[type=email] {
+          background-color: #EBDDC0;
+          opacity: 100%;
+          border: none;
+          border-bottom: 2px solid rgb(61, 61, 61);
+          color: #000;
+          padding: 10px 15px;
+          background: #EBDDC0;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+      }
+
+      .newsletter input[type=email]::placeholder {
+          color:#000
+      }
+
+      .newsletter input[type=submit] {
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          color: #000;
+          padding: 10px 15px;
+          background: #ffffff;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+      }
+
+     footer {
+          background-color: #2c1901;
+          font-size: 1.1rem;
+          color: #dac189;
+          padding: 1rem;
+          margin: 0; 
+          box-sizing: border-box;
+      }
+
+      footer h1,
+      h2,
+      h3,
+      h4 {
+          font-family: 'Bebas Neue', sans-serif;
+      }
+
+      h1 {
+          font-size: 48px;
+      }
+      h2 {
+          font-size: 36px;
+      }
+      h3 {
+          font-size: 28px;
+          margin-left: 2rem;
+      }
+      h4 {
+          font-size: 21px;
+      }
+
+      .social {
+          display: flex;
+          justify-content: right;
+          list-style-type: none;
+      }
+
+      .social-icon {
+          margin: 1rem;
+          font-size: 2rem;
+          margin-bottom: 5rem;
+      }
+
+      .fa-icon {
+          display: inline-block;
+          font-size: 1.75rem;
+          padding: 0px 20px;
+          color: #dac189;
+      }
+
+      .contact-info, .copyright {
+          margin-left: 2rem;
+      }
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+        <div class="left-container">
+            <ul>   
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/store.html">SHOP</a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/blog.html">LEARN</a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/about.html">ABOUT</a></li>
+            </ul>
+        </div>
+            <div id="logo">
+                <a href="https://vancouvercoffeeroasters.oskartsang.ca/home.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="right-container">
+            <ul>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/form.html"><img src="img/login.png" alt="login icon"></a></li>
+                <li><a href="https://vancouvercoffeeroasters.oskartsang.ca/cart.html"><img src="img/cart.png" alt="cart icon"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="search icon"></a></li>
+            </ul>
+            </div>
+        </nav> 
+    </header>
+
+<div class="wrapper">
+	<div class="product">
+		<!-- Product Image  -->
+		<a href="#"><div id="pro1"> <img src="img/colombia.jpg" alt="Colombia Coffee Beans"> </div></a>
+
+		<!-- Product Info -->
+		<div class="info">
+			<div> <p id="name"> Rosca </p></div>
+			<div id="star"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> &nbsp;<p> 3 Review </p></div>
+
+			<hr>
+
+			<div class="desc1">
+				<div> <p id="price"> $20 </p> </div>
+				<div> <p id="cate"> <label for="quantity">Quantity: </label>
+					<input type="number" id="quantity" name="quantity" min="1" max="100"> </p>
+				</div>
+				<div id="but">
+				<button type="submit"> <p> Add to Cart </p> </button>
+      </div>
+			</div>
+
+
+			<hr>
+
+			<!-- Product Description -->
+			<div class="desc"> 
+				<p id="desc1"> Product Name: Rosca</p>
+				<p id="desc1">Item Code: ADRK-2092</p>
+				<p id="desc1">Roast Level: Dark</p>
+				<p id="desc1">Bean Origin: Colombia</p>
+				
+
+				<p id="desc1"> "Experience the rich and full-bodied coffee blend, roasted to produce a robust flavor with hints of cocoa and nutty notes. This dark roast is meant for those looking for the strong and bold. You’ll taste depth and intensity from the first sip. Suggested brewing type includes standard methods such as drip, French press, and espresso. Recommended both as a hot or iced beverage. Rosca pairs especially well with a classic almond croissant, white chocolate biscotti. or a decadent fudge brownie. Enjoy the taste of Rosca with every sip of this premium dark roast blend.” </p>
+
+				<p id="desc1"> Founded in the northwest side of South America lies one of Vancouver Coffee Roaster’s longest partners of fair trade coffee farmers. Our main farmers at Valdez Coffee Farm, focus on growing beans with the best direct care. Starting from the ground, no synthetic fertilizers are used in the process. Instead of relying on chemical pesticides, Valdez specifically uses Diatomaceous Earth as a natural pesticide method. Once the beans are fully ripe, they are harvested and proceed to a selection process. Any unripe or shriveled bean is eliminated. Finally the beans are carried out to production partners within the region to maintain freshness till its final product</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="category1">
+		
+		<p> Similar Products </p>
+
+	</div>
+	<div class="sim">
+	<div class="tproduct">
+  <!-- Product Image  -->
+  <div id="tpro"> <img src="img/houseblend.jpg" alt="Houseblend Coffee Beans"> </div>
+  <!-- Product Info -->
+  <div class="tinfo">
+    <div> <p id="tname"> House-Blend </p></div>
+    <div id="tstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+    <div> <p id="tprice"> $19 </p> </div>
+    <div> <p id="tcate"> Category </p> </div>
+  </div>
+</div>
+
+<div class="tproduct">
+  <!-- Product Image  -->
+  <div id="tpro"> <img src="img/suncast.jpg" alt="Suncast Coffee Beans"> </div>
+  <!-- Product Info -->
+  <div class="tinfo">
+    <div> <p id="tname"> Sun Cast </p></div>
+    <div id="tstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+    <div> <p id="tprice"> $17 </p> </div>
+    <div> <p id="tcate"> Category </p> </div>
+  </div>
+</div>
+
+<div class="tproduct">
+  <!-- Product Image  -->
+  <div id="tpro"> <img src="img/willowwest.jpg" alt="Willowwest Coffee Beans"> </div>
+  <!-- Product Info -->
+  <div class="tinfo">
+    <div> <p id="tname"> Willow West </p></div>
+    <div id="tstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+    <div> <p id="tprice"> $15 </p> </div>
+    <div> <p id="tcate"> Category </p> </div>
+  </div>
+</div>
+</div>
+
+<hr>
+<div class="rcategory">
+		
+		<p> Reviews </p>
+
+	</div>
+
+<div class="rproduct">
+
+		<!-- Product Image  -->
+		<div id="rpro"> <img src="img/profile.png" alt="Profile Image"> </div>
+
+		<!-- Product Info -->
+		<div class="rinfo">
+		<div> <p id="rname"> John Doe </p></div>
+		<div> <p id="rcate"> October 1, 2023 </p> </div>
+		<div id="rstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		
+		
+		</div>
+
+		<!-- Product Description -->
+		<div class="rdesc"> 
+			<p id="rdesc1"> Hands down my favourite bean for coffee. It’s beautifully dark and bold, with a rich flavour. I use this in my espresso machine every day. I love opening the bag and seeing the dark beans with the oils on them. </p>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="rproduct">
+
+		<!-- Product Image  -->
+		<div id="rpro"> <img src="img/profile.png" alt="Profile Image"> </div>
+
+		<!-- Product Info -->
+		<div class="rinfo">
+		<div> <p id="rname"> John Doe </p></div>
+		<div> <p id="rcate"> October 1, 2023 </p> </div>
+		<div id="rstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		
+		
+		</div>
+
+		<!-- Product Description -->
+		<div class="rdesc"> 
+			<p id="rdesc1"> Have been using Starbuck’s Cafe Verona prior to this, but, while it is a good coffee, have found the flavours to be too subtle. This Vancouver Coffee Roasters, however, is robust and perfectly balanced with no bitterness. I’m using the most course espresso grind on my Cuisinart burr grinder for a pour over coffee. Perfection.</p>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="rproduct">
+
+		<!-- Product Image  -->
+		<div id="rpro"> <img src="img/profile.png" alt="Profile Image"> </div>
+
+		<!-- Product Info -->
+		<div class="rinfo">
+		<div> <p id="rname"> John Doe </p></div>
+		<div> <p id="rcate"> October 1, 2023 </p> </div>
+		<div id="rstar"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i></div>
+		
+		
+		</div>
+
+		<!-- Product Description -->
+		<div class="rdesc"> 
+			<p id="rdesc1"> I am a big espresso fan and usually aim to try new flavors out there. Vancouver Coffee Roasters has been always on my mind when purchasing beans but I can't recall the last time I actually did. So, when I ran out of my personal batch, I decided to give them a try. I love medium roasts, although most of the ones I get are usually light because I prefer the bitter/acidity taste for my specialty drinks (mix with milk). Nevertheless, I wanted to try the  medium roast and see if I would like it. After I did I fell in love with it and now I can't drink any other brand.</p>
+		</div>
+	</div>
+</div>
+
+  <div class="newsletter">
+      <table>
+          <tr>
+              <td>
+                  <span id="newsletter">
+                      Subscribe to our weekly newsletter
+                      <div id="email_button">
+                      <input type="email" name="email" placeholder="Enter email ">
+                      <a href="https://vancouvercoffeeroasters.oskartsang.ca/ty_register.html"> <input type="submit" value="Subscribe"> </a>
+                      </div>
+                  </span>
+              </td>
+          </tr>
+      </table>
+  </div>
+  
+  <footer>
+      <h3>Vancouver Coffee Roasters</h3>
+      <br>
+      <span class="contact-info">123 Somewhere</span>
+      <span class="contact-info">Vancouver, BC</span>
+      <span class="contact-info">(555) 555-5555</span>
+      <br>
+      <br>
+      <span class="copyright">Copyright © Date Name. All rights reserved.</span>
+  
+      <ul class="social">
+          <li class="social-icon "><i class="fa-brands fa-square-facebook"></i></li>
+          <li class="social-icon "><i class="fa-brands fa-square-twitter"></i></li>
+          <li class="social-icon "><i class="fa-brands fa-square-instagram"></i></li>
+          <a href="https://vancouvercoffeeroasters.oskartsang.ca/contact.html"><li class="social-icon "><i class="fa-solid fa-envelope"></i></li></a>
+      </ul>
+  </footer>
+
+</body>
+</html>
